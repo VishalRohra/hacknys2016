@@ -2,33 +2,61 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:fitsSystemWindows="true">
+    android:fitsSystemWindows="true"
+    android:fillViewport="false"
+    android:background="#e6ef43">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="fill_parent"
         android:paddingTop="60dp"
         android:paddingLeft="24dp"
-        android:paddingRight="24dp">
+        android:paddingRight="24dp"
+        android:background="#e6ef43"
+        android:weightSum="1">
+
 
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="11.17" />
+
+        <ImageView
+            android:layout_width="884dp"
+            android:layout_height="150dp"
             android:layout_marginBottom="24dp"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.48"
+            android:src="@drawable/vulture" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Scavenger"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="11.17"
+            android:textSize="40dp" />
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="18dp"
+            android:layout_marginTop="150dp"
             android:layout_marginBottom="8dp">
             <EditText android:id="@+id/input_email"
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
-                android:hint="Name" />
+                android:hint="Name"
+                android:backgroundTint="#de8b3e"
+                android:textColor="#a9e9e7"
+                android:textColorHint="#000698"
+                android:textIsSelectable="true" />
 
         </android.support.design.widget.TextInputLayout>
 
@@ -38,7 +66,10 @@
             android:layout_height="wrap_content"
             android:text="Join Team"
             android:id="@+id/join"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#de8b3e"
+            android:textColor="#a9e9e7" />
+
 
         <Button
             android:layout_width="wrap_content"
@@ -46,10 +77,10 @@
             android:text="Create Team"
             android:id="@+id/create"
             android:layout_gravity="center_horizontal"
-            android:onClick="createTeam" />
-
-
-
+            android:onClick="createTeam"
+            android:backgroundTint="#de8b3e"
+            android:allowUndo="false"
+            android:textColor="#a9e9e7" />
 
 
     </LinearLayout>
