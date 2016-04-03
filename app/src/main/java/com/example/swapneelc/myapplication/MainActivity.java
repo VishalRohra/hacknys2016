@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, login.class);
+                Intent i = new Intent(MainActivity.this, JoinTeam.class);
                 startActivity(i);
             }
         });
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, CreateTeam.class);
-                startActivity(i);
+                MainActivity.this.startActivity(i);
             }
         });
 

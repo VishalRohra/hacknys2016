@@ -17,15 +17,17 @@ import android.content.Intent;
 /**
  * Created by arub on 4/2/16.
  */
-public class CreateTeam extends Activity {
+public class JoinTeam extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_create_team);
+        setContentView(R.layout.activity_join_team);
 
-        Button b = (Button) findViewById(R.id.createteam);
+
+
+        Button b = (Button) findViewById(R.id.jointeam);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
