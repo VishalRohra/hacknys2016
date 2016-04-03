@@ -179,9 +179,28 @@
                     android:gravity="left"
                     android:text="Brown cat"/>
 
+                <Button
+                    android:id="@+id/btnOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="170dip"
+                    android:text="Picture"></Button>
+
+
+                <Button
+                    android:id="@+id/btnThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+
+                    android:width="170dip"
+                    android:text="Check-In"></Button>
+
             </LinearLayout>
 
         </LinearLayout>
+
+
 
     </LinearLayout>
 
