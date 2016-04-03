@@ -40,7 +40,9 @@
             android:id="@+id/textView"
             android:layout_gravity="center_horizontal"
             android:layout_weight="11.17"
-            android:textSize="40dp" />
+            android:textSize="40dp"
+            style="@android:style/Theme.Material.NoActionBar.TranslucentDecor"
+            android:shadowColor="#bf2828" />
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
@@ -54,9 +56,10 @@
                 android:inputType="textEmailAddress"
                 android:hint="Name"
                 android:backgroundTint="#de8b3e"
-                android:textColor="#a9e9e7"
-                android:textColorHint="#000698"
-                android:textIsSelectable="true" />
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textIsSelectable="true"
+                android:singleLine="true" />
 
         </android.support.design.widget.TextInputLayout>
 
@@ -68,7 +71,7 @@
             android:id="@+id/join"
             android:layout_gravity="center_horizontal"
             android:backgroundTint="#de8b3e"
-            android:textColor="#a9e9e7" />
+            android:textColor="#000000" />
 
 
         <Button
@@ -80,7 +83,7 @@
             android:onClick="createTeam"
             android:backgroundTint="#de8b3e"
             android:allowUndo="false"
-            android:textColor="#a9e9e7" />
+            android:textColor="#000000" />
 
 
     </LinearLayout>
