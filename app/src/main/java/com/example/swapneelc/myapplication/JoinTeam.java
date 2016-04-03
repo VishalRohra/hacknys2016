@@ -33,7 +33,9 @@ public class JoinTeam extends Activity {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.out.println("yoo");
+                Intent i = new Intent(JoinTeam.this, HuntActivity.class);
+                i.putExtra("name", tv.getText().toString());
+                startActivity(i);
             }
         });
 

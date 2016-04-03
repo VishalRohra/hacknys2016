@@ -25,15 +25,21 @@ public class CreateTeam extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_team);
 
+        String teamname = (String) findViewById(R.id.teamname);
+        Integer numobjective = (Integer) findViewById(R.id.numobjective);
+        Button b = (Button) findViewById(R.id.createteam);
+
         Intent i = getIntent();
         String name = i.getStringExtra("name");
         System.out.println(name);
 
-        Button b = (Button) findViewById(R.id.createteam);
+
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.out.println("yoo");
+                Intent i = new Intent(CreateTeam.this, .class);
+                i.putExtra("name", tv.getText().toString());
+                startActivity(i);
             }
         });
 
