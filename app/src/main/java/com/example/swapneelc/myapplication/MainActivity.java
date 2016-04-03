@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         Button b = (Button) findViewById(R.id.join);
         Button c = (Button) findViewById(R.id.create);
 
+//      Join team
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -32,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+//      Create team
         c.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

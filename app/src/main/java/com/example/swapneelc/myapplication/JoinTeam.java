@@ -26,20 +26,20 @@ public class JoinTeam extends Activity {
         setContentView(R.layout.activity_join_team);
 
         Intent i = getIntent();
-        String name = i.getStringExtra("name");
-        System.out.println(name);
+
+        final String name = i.getStringExtra("name");
+        final TextView teamcode = (TextView) findViewById(R.id.teamcode);
+
+//      Check for teamcode here
 
         Button b = (Button) findViewById(R.id.jointeam);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(JoinTeam.this, HuntActivity.class);
-                i.putExtra("name", tv.getText().toString());
+                i.putExtra("name", name);
                 startActivity(i);
             }
         });
-
-
     }
-
 }
