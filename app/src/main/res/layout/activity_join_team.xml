@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:inputType="text"
-            android:hint="Enter team code"/>
+            android:hint="Enter team "/>
 
 
         <Button
