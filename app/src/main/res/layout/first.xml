@@ -12,14 +12,14 @@
         android:paddingLeft="24dp"
         android:paddingRight="24dp">
 
-        <ImageView 
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="100dp"
             android:layout_marginBottom="24dp"
             android:layout_gravity="center_horizontal" />
 
 
-        <!-- Email Label -->
+
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -31,6 +31,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
                 android:hint="Name" />
+
         </android.support.design.widget.TextInputLayout>
 
 
@@ -38,17 +39,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Join Team"
-            android:id="@+id/button"
-            android:layout_gravity="center_horizontal"
-            android:textColorHighlight="#ae1313"
-            android:onClick="onButtonClick" />
+            android:id="@+id/join"
+            android:layout_gravity="center_horizontal" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Create Team"
-            android:id="@+id/button2"
-            android:layout_gravity="center_horizontal" />
+            android:id="@+id/create"
+            android:layout_gravity="center_horizontal"
+            android:onClick="createTeam" />
+
 
 
 
