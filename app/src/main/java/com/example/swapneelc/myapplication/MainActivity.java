@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.first);
-        TextView tv = (TextView) findViewById(R.id.input_email);
+        final TextView tv = (TextView) findViewById(R.id.input_email);
         Button b = (Button) findViewById(R.id.join);
         Button c = (Button) findViewById(R.id.create);
 
@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, JoinTeam.class);
+                i.putExtra("name", tv.getText().toString());
                 startActivity(i);
             }
         });
@@ -36,7 +37,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, CreateTeam.class);
-                MainActivity.this.startActivity(i);
+                i.putExtra("name", tv.getText().toString());
+                startActivity(i);
             }
         });
 
