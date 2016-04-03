@@ -41,8 +41,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_weight="11.17"
             android:textSize="40dp"
-            style="@android:style/Theme.Material.NoActionBar.TranslucentDecor"
-            android:shadowColor="#bf2828" />
+            style="@android:style/Theme.Material.NoActionBar.TranslucentDecor" />
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
