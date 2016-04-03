@@ -35,7 +35,13 @@ public class HuntActivity extends AppCompatActivity {
 
         new CountDownTimer(30*1000, 1000) {
             public void onTick(long millisUntilFinished) {
-                timeleft_view.setText(millisUntilFinished/1000 + "s left");
+                Long minutesleft = millisUntilFinished / (60 * 1000);
+                Long secondsleft = (millisUntilFinished - (minutesleft * 60 * 1000))/1000;
+
+                System.out.println(minutesleft);
+                System.out.println(secondsleft);
+
+                timeleft_view.setText(minutesleft + "m "+ secondsleft + "s left");
             }
             public void onFinish() {
                 timeleft_view.setText("done!");
@@ -43,19 +49,5 @@ public class HuntActivity extends AppCompatActivity {
         }.start();
     }
 
-    public void startTimer(TextView timeleft_view) {
 
-        Integer time = 0;
-        Integer limit = 60*1000;
-        Integer timeleft = limit;
-
-        while (time < limit) {
-            try {
-                wait(1000);
-            } catch(Exception e) {}
-            timeleft -= 1000;
-            timeleft_view.setText(timeleft + "s left");
-            time += 1000;
-        }
-    }
 }
