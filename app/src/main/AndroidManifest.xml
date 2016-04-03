@@ -25,6 +25,10 @@
         <activity
             android:name=".JoinTeam"
             android:label="@string/title_activity_join_team"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HuntActivity"
+            android:label="@string/title_activity_hunt"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
