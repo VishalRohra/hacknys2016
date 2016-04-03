@@ -4,4 +4,7 @@
     <string name="title_activity_create_team">CreateTeam</string>
     <string name="title_activity_join_team">JoinTeam</string>
     <string name="title_activity_hunt">HuntActivity</string>
+    <string name="title_activity_recognition">RecognitionActivity</string>
+
+    <string name="hello_world">Hello world!</string>
 </resources>
