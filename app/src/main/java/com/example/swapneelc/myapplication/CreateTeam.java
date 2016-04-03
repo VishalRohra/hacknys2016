@@ -25,6 +25,10 @@ public class CreateTeam extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_team);
 
+        Intent i = getIntent();
+        String name = i.getStringExtra("name");
+        System.out.println(name);
+
         Button b = (Button) findViewById(R.id.createteam);
         b.setOnClickListener(new View.OnClickListener() {
             @Override

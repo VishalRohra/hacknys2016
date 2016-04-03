@@ -25,7 +25,9 @@ public class JoinTeam extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_join_team);
 
-
+        Intent i = getIntent();
+        String name = i.getStringExtra("name");
+        System.out.println(name);
 
         Button b = (Button) findViewById(R.id.jointeam);
         b.setOnClickListener(new View.OnClickListener() {
